@@ -156,7 +156,7 @@ public class MapeamentoController {
 		try{
 			System.out.println("Login");
 			us.validar(usuario);
-			return "redirect:tela_login";
+			return "tela_login";
 		}
 		catch (Exception e) {
 			e.printStackTrace();
