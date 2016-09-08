@@ -15,7 +15,39 @@
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<c:import url="../menu.jsp" />
+	<c:import url="./menu.jsp" />
+	<div class="container">
+		<form name="frmLogin" onClick="" action="post">
+			<div class="row">
+				<div class="form-group col-md-7">
+					<label class="col-md-2">Login</label>
+					<div class="col-md-5">
+						<input type="text" id="login" name="login" class="form-control" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-7">
+					<label class="col-md-2">Senha</label>
+					<div class="col-md-5">
+						<input type="password" id="senha" name="senha"
+							class="form-control" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="col-md-6">
+						<input type="button" value="Entrar" id="enviar" name="enviar" class="btn btn-success"/>
+					</div>
+					<div class="col-md-6">
+						<input type="reset" value="Limpar" id="limpar" name="limpar" class="btn btn-warning" />
+					</div>
+				</div>
+			</div>
+
+		</form>
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
