@@ -17,12 +17,12 @@
 <body>
 	<c:import url="./menu.jsp" />
 	<div class="container">
-		<form name="frmLogin" onClick="" action="post">
+		<form name="frmLogin" method="POST" action="fazer_login">
 			<div class="row">
 				<div class="form-group col-md-7">
 					<label class="col-md-2">Login</label>
 					<div class="col-md-5">
-						<input type="text" id="login" name="login" class="form-control" />
+						<input type="text" id="username" name="username" class="form-control" />
 					</div>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 				<div class="form-group col-md-7">
 					<label class="col-md-2">Senha</label>
 					<div class="col-md-5">
-						<input type="password" id="senha" name="senha"
+						<input type="password" id="password" name="password"
 							class="form-control" />
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 			<div class="row">
 				<div class="col-md-2">
 					<div class="col-md-6">
-						<input type="button" value="Entrar" id="enviar" name="enviar" class="btn btn-success"/>
+						<input type="submit" value="Entrar" id="enviar" name="enviar" class="btn btn-success"/>
 					</div>
 					<div class="col-md-6">
 						<input type="reset" value="Limpar" id="limpar" name="limpar" class="btn btn-warning" />

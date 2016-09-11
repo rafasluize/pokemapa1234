@@ -1,5 +1,7 @@
 package br.usjt.arqdes16.mapeamento.service;
 
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,7 @@ public class UsuarioService {
 		this.dao = dao; 
 	}
 
-	public Usuario validar(Usuario usuario) {
+	public Boolean validar(Usuario usuario) throws IOException {
 		// TODO Auto-generated method stub
 		return dao.validar(usuario); 
 	}

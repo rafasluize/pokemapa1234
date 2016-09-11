@@ -22,5 +22,8 @@
 		<property name="username" value="alunos"></property>
 		<property name="password" value="alunos"></property>
 	</bean>
+	<mvc:interceptors>
+		<bean class="br.com.usjt.arqdes16.interceptor.AutorizadorInterceptor" />
+	</mvc:interceptors>
 
 </beans>
