@@ -15,7 +15,7 @@
 			</div>
 		</div>
 
-		<ul class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-header navbar-right">
 			<li><a href="deslogar"><span class="glyphicon glyphicon-user"></span>
 					Sair</a></li>
 		</ul>

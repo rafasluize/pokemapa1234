@@ -12,21 +12,21 @@ public class Local implements Serializable{
 	private int id;
 	
 	@NotNull 
-	@Size(max=128, min=5, message="O tamanho m√°ximo do nome est√° entre 5 e 128 caracteres")
+	@Size(max=128, min=5, message="O tamanho m·ximo do nome est· entre 5 e 128 caracteres")
 	private String nome;
 	
 	@NotNull 
-	@DecimalMax(value="5.27", message="latitude m√°xima do Brasil √© 5.27 (Roraima)") 
-	@DecimalMin(value="-33.75", message="latitude m√≠nima do Brasil √© -33.75 (Chu√≠)")
+	@DecimalMax(value="5.27", message="latitude m·xima do Brasil È 5.27 (Roraima)") 
+	@DecimalMin(value="-33.75", message="latitude minima do Brasil È -33.75 (Arroio ChuÌ")
 	private double latitude;
 
 	//incluindo Fernando de Noronha
 	@NotNull 
-	@DecimalMax(value="-32.38",message="longitude m√°xima do Brasil √© -32.38 (Fernando de Noronha)") 
-	@DecimalMin(value="-73.97",message="longitude m√≠nima do Brasil √© -73.97 (Acre)")
+	@DecimalMax(value="-32.38",message="longitude m·xima do Brasil È -32.38 (Fernando de Noronha)") 
+	@DecimalMin(value="-73.97",message="longitude minima do Brasil È -73.97 (Acre)")
 	private double longitude;
 
-	@Size(max=128, min=5, message="O tamanho m√°ximo do nome da imagem est√° entre 5 e 128 caracteres")
+	@Size(max=128, min=5, message="O tamanho m·ximo do nome da imagem est· entre 5 e 128 caracteres")
 	private String imagem;
 	
 	private int cidade;

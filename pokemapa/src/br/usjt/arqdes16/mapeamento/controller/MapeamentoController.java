@@ -79,12 +79,17 @@ public class MapeamentoController {
 
 	@RequestMapping("incluir_local")
 	public String inclusao(@Valid Local local, BindingResult result, Model model) {
+		Local localAntes = local; 
 		try {
 			if (result.hasErrors()) {
+				if(result.hasFieldErrors("nome")) local.setNome("");
+				if(result.hasFieldErrors("latitude")) localAntes.setLatitude(0.00);
+				if(result.hasFieldErrors("longitude")) localAntes.setLongitude(0.00);
 				ArrayList<Tipo> tipos = ts.listarTipos();
 				model.addAttribute("tipos", tipos);
 				ArrayList<Cidade> cidades = cs.listarCidades();
 				model.addAttribute("cidades", cidades);
+				model.addAttribute("locais",localAntes);
 				return "local/localcriar";
 			}
 			ls.criar(local);

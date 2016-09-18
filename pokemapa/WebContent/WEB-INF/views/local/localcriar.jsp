@@ -28,7 +28,7 @@
 				<div class="form-group col-md-8">
 					<label for="nome">Nome</label> 
 					<input type="text" class="form-control" name="nome" 
-					id="nome" required maxlength="128" 
+					id="nome" required maxlength="128" value="${local.nome}" 
 					placeholder="nome do local">
 					<form:errors path="local.nome" cssStyle="color:red" />
 				</div>
@@ -46,14 +46,14 @@
 					<label for="latitude">Latitude</label> 
 					<input type="number" class="form-control" name="latitude" 
 					id="latitude" step="0.000001" required 
-					placeholder="latitude do local">
+					placeholder="latitude do local" value="${local.latitude}">
 					<form:errors path="local.latitude" cssStyle="color:red" />
 				</div>
 				<div class="form-group col-md-4">
 					<label for="longitude">Longitude</label> 
 					<input type="number" class="form-control" name="longitude" 
 					id="longitude" step="0.000001" required 
-					placeholder="longitude do local">
+					placeholder="longitude do local" value=${local.longitude}>
 					<form:errors path="local.longitude" cssStyle="color:red" />
 				</div>
 				<div class="form-group col-md-4">
